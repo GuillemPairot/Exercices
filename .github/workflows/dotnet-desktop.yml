@@ -112,5 +112,3 @@ jobs:
       #   with:
       #     name: MSIX Package
       #     path: ${{ env.Wap_Project_Directory }}/AppPackages
-message.txt
-6 Ko
