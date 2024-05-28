@@ -16,9 +16,10 @@ namespace People.Service.Controllers
         // TODO 9-2 : Commenter la ligne de code qui créé le provider
         // TODO 9-3 : Et affecter à _provider, le nouveau paramètre du constructeur
 
-        public PeopleController()
+        public PeopleController(IPeopleProvider peopleProvider)
         {
-            this._provider = new HardCodedPeopleProvider();
+            //this._provider = new HardCodedPeopleProvider();
+            this ._provider = peopleProvider;
         }
 
         // GET /people

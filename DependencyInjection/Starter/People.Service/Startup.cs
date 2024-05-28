@@ -28,6 +28,7 @@ namespace People.Service
             services.AddControllers();
             // TODO 9 : Utiliser l'IOC (le container) fourni de base par asp.net core
             // TODO 9-4 : Configurer le container pour lier l'interface IPeopleProvider à la classe concrète HardCodedPeopleProvider en utilisant la méthode AddSingleton de services
+            services.AddSingleton<IPeopleProvider, HardCodedPeopleProvider>();
             // TODO 9-5 : Vérifier que le service web People.Service retourne toujours les résultats
             
         }
